@@ -14,7 +14,7 @@ python multiquark/train.py AL1 ccqq 1 0  # potential quarks S I
 ```
 The above code carries out the NN-VMC training of the doubly charmed tetraquark system $cc\bar q\bar q$ with total spin $S=1$ and isospin $I=0$ in the AL1 potential model. The default values of some other parameters are included in config_.py, you can override the default values by: 
 ```bash
-python multiquark/train.py AL1 ccqq 1 0 --nlayers 5 --nnodes 32
+python multiquark/train.py AL1 ccqq 1 0 --nlayers 5 --nnodes 32 --bound 3 --sigma 0.05
 ```
 For more information on the parameter inputs:
 ```bash
