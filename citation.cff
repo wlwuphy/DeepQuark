@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Wu"
+  given-names: "Wei_Lin"
+  orcid: "https://orcid.org/0009-0009-3480-8810"
+title: "DeepQuark"
+version: 1.0.0
+doi:10.48550/arXiv.2506.20555
+date-released: 2026-01-06
+url: "https://github.com/wlwuphy/DeepQuark"
