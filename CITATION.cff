@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Wu"
-  given-names: "Wei_Lin"
+  given-names: "Wei-Lin"
   orcid: "https://orcid.org/0009-0009-3480-8810"
 title: "DeepQuark"
 version: 1.0.0
