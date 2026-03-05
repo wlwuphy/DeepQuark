@@ -87,7 +87,7 @@ class QQQ_FCN(nn.Module):
                         [sqrt(3) / 4, -3 / 4, 1 / 4, -sqrt(3) / 4],
                         [3 / 4, sqrt(3) / 4, sqrt(3) / 4, 1 / 4]])
         Iden = jnp.eye(4)
-        recouple_matrices = jnp.array([Iden, P12 @ Pn @ Pn, P12, Pn, Pn @ Pn, P12 @ Pn])
+        recouple_matrices = jnp.array([Iden, -P12 @ Pn @ Pn, -P12, Pn, Pn @ Pn, -P12 @ Pn])  # color antisymmetry
 
         # change notations of discretex to (1,0,0,0),(0,1,0,0),..., so that the recoupling coefficients are in order
         discretex = x[:, -n_dis:]
