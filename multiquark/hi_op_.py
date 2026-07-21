@@ -415,14 +415,14 @@ elif S == 1 / 2:
         sme000_011 = jnp.array([0] * 6 + [0, 0, -sqrt(3) / 4, sqrt(3) / 4], dtype=jnp.float32)
         sme000_101 = jnp.array([0] * 6 + [-sqrt(3) / 4, sqrt(3) / 4, 0, 0], dtype=jnp.float32)
         sme000_111 = jnp.array([0] * 6 + [0] * 4, dtype=jnp.float32)
-        sme110_011 = jnp.array([0] * 6 + [-1 / 4, 1 / 4, 0, 0], dtype=jnp.float32)
-        sme110_101 = jnp.array([0] * 6 + [0, 0, -1 / 4, 1 / 4], dtype=jnp.float32)
+        sme110_011 = jnp.array([0] * 6 + [1 / 4, -1 / 4, 0, 0], dtype=jnp.float32)
+        sme110_101 = jnp.array([0] * 6 + [0, 0, 1 / 4, -1 / 4], dtype=jnp.float32)
         sme110_111 = jnp.array([0] * 6 + [-sqrt(2) / 4, -sqrt(2) / 4, sqrt(2) / 4, sqrt(2) / 4], dtype=jnp.float32)
         sme011_101 = jnp.array([0, 0, 1 / 4, 1 / 4, -1 / 4, -1 / 4] + [0] * 4, dtype=jnp.float32)
         sme011_111 = jnp.array([0, 0, -1 / (2 * sqrt(2)), 1 / (2 * sqrt(2)), -1 / (2 * sqrt(2)), 1 / (2 * sqrt(2)),
-                                -sqrt(2) / 4, sqrt(2) / 4, 0, 0], dtype=jnp.float32)
+                                sqrt(2) / 4, -sqrt(2) / 4, 0, 0], dtype=jnp.float32)
         sme101_111 = jnp.array([0, 0, 1 / (2 * sqrt(2)), -1 / (2 * sqrt(2)), -1 / (2 * sqrt(2)), 1 / (2 * sqrt(2)),
-                                0, 0, sqrt(2) / 4, -sqrt(2) / 4], dtype=jnp.float32)
+                                0, 0, -sqrt(2) / 4, sqrt(2) / 4], dtype=jnp.float32)
 
         smes = jnp.select(
             [cond000_000, cond110_110, cond011_011, cond101_101, cond111_111, cond000_110, cond000_011, cond000_101,
